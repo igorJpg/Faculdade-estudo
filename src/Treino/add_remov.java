@@ -20,9 +20,7 @@ public class add_remov {
 
     public boolean removerExercicio(String nomeExercicio) {
         for (List<Exercicio> lista : exercicios.values()) {
-            boolean removeu = lista.removeIf(e ->
-                    e.getNome().equalsIgnoreCase(nomeExercicio)
-            );
+            boolean removeu = lista.removeIf(e -> e.getNome().equalsIgnoreCase(nomeExercicio));
             if (removeu) return true;
         }
         return false; // não encontrou

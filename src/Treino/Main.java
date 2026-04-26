@@ -19,7 +19,7 @@ public class Main {
             System.out.println("0 - Sair");
             System.out.print("Escolha: ");
             opcao = sc.nextInt();
-            sc.nextLine(); // limpa o buffer
+            sc.nextLine();
 
             switch (opcao) {
                 case 1 -> adicionarExercicio();
@@ -50,7 +50,7 @@ public class Main {
             double peso = sc.nextDouble();
             ex.adicionarSerie(reps, peso);
         }
-        sc.nextLine(); // limpa o buffer
+        sc.nextLine();
 
         treino.add_exercicio(ex);
         System.out.println("Exercício '" + nome + "' adicionado!");
