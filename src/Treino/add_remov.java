@@ -23,7 +23,7 @@ public class add_remov {
             boolean removeu = lista.removeIf(e -> e.getNome().equalsIgnoreCase(nomeExercicio));
             if (removeu) return true;
         }
-        return false; // não encontrou
+        return false;
     }
     public void exibirTreino() {
         if (exercicios.isEmpty()) {
@@ -41,6 +41,7 @@ public class add_remov {
         }
     }
 }
+
 
 
 
